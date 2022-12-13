@@ -8,9 +8,9 @@ general {
 }
 
 order += "disk /"
-order += "cpu_usage"
-order += "memory"
+# order += "cpu_usage"
 order += "battery all"
+order += "memory"
 order += "volume master"
 order += "tztime local"
 order += "time"
@@ -19,17 +19,17 @@ disk "/" {
     format = "  pyorin"
 }
 
-cpu_usage {
-    format = " 異 %usage "
-}
+# cpu_usage {
+#    format = " %usage "
+# }
 
 memory {
-    format = "  %used "
+    format = "  %used "
 }
 
 battery all {
     format = " %status %percentage "
-        format_down = "No battery"
+        format_down = "  Claudia "
         last_full_capacity = true
         integer_battery_capacity = true
         status_chr = ""
@@ -49,10 +49,10 @@ volume master {
 }
 
 tztime local {
-    format = " %A %Y-%m-%d "
+    format = "  %A %Y-%m-%d "
 }
 
 time {
-    format = " %H:%M "
+    format = "  %H:%M "
 }
 
