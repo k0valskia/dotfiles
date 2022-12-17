@@ -41,8 +41,9 @@ exec --no-startup-id nitrogen --restore
 
 exec picom -b --experimental-backends
 
-default_border pixel 0
+default_border pixel 1 
 default_floating_border pixel 1
+
 
 client.background #F8F8F2
 client.focused #ffffff #ffffff #000088 #00C1FF
