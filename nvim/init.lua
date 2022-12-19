@@ -1,21 +1,23 @@
-local impatient_ok, impatient = pcall(require, "impatient")
-if impatient_ok then impatient.enable_profile() end
+-- Settings
+require("angga.plugins")
+require("angga.core.keymaps")
+require("angga.core.colorscheme")
+require("angga.core.options")
 
-for _, source in ipairs {
-  "core.utils",
-  "core.options",
-  "core.bootstrap",
-  "core.diagnostics",
-  "core.autocmds",
-  "core.mappings",
-  "configs.which-key-register",
-} do
-  local status_ok, fault = pcall(require, source)
-  if not status_ok then vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault) end
-end
+-- Plugins
+require("angga.config.telescope")
+require("angga.config.cmp")
+require("angga.config.lualine")
+require("angga.config.toggleterm")
+require("angga.config.transparent")
+require("angga.config.discord")
+require("angga.config.autopairs")
+require("angga.config.treesitter")
+require("angga.config.gitsigns")
+require("angga.config.neotree")
 
-astronvim.conditional_func(astronvim.user_plugin_opts("polish", nil, false))
-
-if vim.fn.has "nvim-0.8" ~= 1 or vim.version().prerelease then
-  vim.schedule(function() astronvim.notify("Unsupported Neovim Version! Please check the requirements", "error") end)
-end
+-- Lsp
+require("angga.config.lsp.mason")
+require("angga.config.lsp.lspsaga")
+require("angga.config.lsp.lspconfig")
+require("angga.config.lsp.null-ls")
