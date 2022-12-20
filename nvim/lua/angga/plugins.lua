@@ -8,7 +8,7 @@ local ensure_packer = function()
 	end
 	return false
 end
-local packer_bootstrap = ensure_packer() -- true if packer was just installed
+local packer_bootstrap = ensure_packer()
 vim.cmd([[ 
   augroup packer_user_config
     autocmd!
@@ -47,6 +47,12 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 	use("windwp/nvim-autopairs")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 	use("lewis6991/gitsigns.nvim")
 	use({
@@ -58,6 +64,7 @@ return packer.startup(function(use)
 			"MunifTanjim/nui.nvim",
 		},
 	})
+	use("NvChad/nvim-colorizer.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()

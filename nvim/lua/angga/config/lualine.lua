@@ -21,9 +21,9 @@ local bubbles_theme = {
 		c = { fg = colors.light, bg = colors.black },
 	},
 
-	insert = { a = { fg = colors.black, bg = colors.insert } },
-	visual = { a = { fg = colors.black, bg = colors.violet } },
-	replace = { a = { fg = colors.whive, bg = colors.replace } },
+	insert = { a = { fg = colors.white, bg = colors.black } },
+	visual = { a = { fg = colors.white, bg = colors.black } },
+	replace = { a = { fg = colors.white, bg = colors.replace } },
 
 	inactive = {
 		a = { fg = colors.white, bg = colors.black },

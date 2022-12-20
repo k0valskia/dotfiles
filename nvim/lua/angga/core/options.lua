@@ -11,7 +11,7 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -38,5 +38,5 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 -- hide seperator window bg
-vim.cmd('set fillchars=vert:\\')
-vim.cmd('hi! VertSplit guifg=black guibg=black ctermfg=black ctermbg=black')
+vim.cmd("set fillchars=vert:\\")
+vim.cmd("hi! VertSplit guifg=black guibg=black ctermfg=black ctermbg=black")
