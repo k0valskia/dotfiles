@@ -25,6 +25,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("nyoom-engineering/oxocarbon.nvim")
+	use("folke/tokyonight.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-file-browser.nvim")
@@ -47,6 +48,13 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 	use("windwp/nvim-autopairs")
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+	})
 	use({
 		"numToStr/Comment.nvim",
 		config = function()
