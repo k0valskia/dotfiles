@@ -41,13 +41,19 @@ exec --no-startup-id nitrogen --restore
 
 exec picom -b --experimental-backends
 
-default_border pixel 1 
+gaps inner 10 
+gaps outer 10
+
+default_border pixel 0
 default_floating_border pixel 1
 
+# client.background #F8F8F2
+# client.focused #ffffff #ffffff #000088 #00C1FF
+# client.focused_inactive #2C2C2C #2C2C2C #ffffff #2C2C2C
 
-client.background #F8F8F2
-client.focused #ffffff #ffffff #000088 #00C1FF
-client.focused_inactive #2C2C2C #2C2C2C #ffffff #2C2C2C
+client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
+client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
+client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
 
 # exec --no-startup-id picom --legacy-backends --backend glx
 #-------------------------------------------------------#
