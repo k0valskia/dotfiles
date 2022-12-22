@@ -1,5 +1,5 @@
 # angga.config
 
-my personal i3wm config
+my linux dotfiles
 
 ![image](/screenshot/desktop.jpg?raw=true "Desktop")<br>
