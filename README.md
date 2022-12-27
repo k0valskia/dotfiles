@@ -2,4 +2,5 @@
 
 my linux dotfiles
 
-![image](/screenshot/mydesktop.jpg?raw=true "Desktop")<br>
+![myDesktop](/screenshot/mydesktop.jpg?raw=true "Desktop")<br>
+![myDesktop](/screenshot/old.jpg?raw=true "Desktop")<br>
