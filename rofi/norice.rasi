@@ -1,0 +1,73 @@
+* {
+    /* General */
+    background: #0f111b;
+    foreground: #ecf0c1;
+    border: #364A82;
+    selected: #364A82;
+
+    /* Inputbar */
+    entry-background: #373B41;
+
+    /* Message */
+    textbox-foreground: #ce6f8f;
+}
+
+window {
+    padding: 5;
+    border: 1;
+    background-color: @background;
+    border-color: @border;
+    children: [mainbox];
+}
+
+mainbox {
+    background-color: @background;
+    children: [inputbar,message,listview];
+}
+
+inputbar {
+    background-color: @background;
+    border: 0;
+    children: [entry];
+}
+
+prompt {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+entry {
+    border: 1;
+    background-color: @entry-background;
+    border-color: @border;
+    text-color: @foreground;
+}
+
+listview {
+    background-color: @background;
+    text-color: @foreground;
+    lines: 10;
+    children: [element];
+}
+
+element {
+    children: [element-text];
+}
+
+element-text {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+element-text selected {
+    background-color: @selected;
+}
+
+message {
+    background-color: @background;
+}
+
+textbox {
+    background-color: @background;
+    text-color: @textbox-foreground;
+}
