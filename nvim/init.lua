@@ -7,16 +7,15 @@ require("angga.core.colorscheme")
 -- Plugins
 require("angga.config.telescope")
 require("angga.config.cmp")
-require("angga.config.lualine")
 require("angga.config.toggleterm")
-require("angga.config.transparent")
 require("angga.config.discord")
 require("angga.config.autopairs")
 require("angga.config.treesitter")
 require("angga.config.gitsigns")
-require("angga.config.neotree")
 require("angga.config.colorizer")
 require("angga.config.comments")
+require("angga.config.dashboard")
+require("angga.config.transparent")
 
 -- Lsp
 require("angga.config.lsp.mason")

@@ -11,8 +11,12 @@ local colors = {
   visual = '#FFCA03',
   replace = '#FF008E',
   normal = '#4649FF',
-  light = '#888da4'
+  light = '#888da4',
 }
+
+local function waifu()
+	return [[asuna]]
+end
 
 local bubbles_theme = {
 	normal = {
@@ -21,8 +25,8 @@ local bubbles_theme = {
 		c = { fg = colors.light, bg = colors.black },
 	},
 
-	insert = { a = { fg = colors.white, bg = colors.black } },
-	visual = { a = { fg = colors.white, bg = colors.black } },
+	insert = { a = { fg = colors.white, bg = colors.red } },
+	visual = { a = { fg = colors.black, bg = colors.cyan } },
 	replace = { a = { fg = colors.white, bg = colors.replace } },
 
 	inactive = {
@@ -35,6 +39,7 @@ local bubbles_theme = {
 local sections = {
 	lualine_a = {
 		{ "mode", separator = { left = "" }, right_padding = 0 },
+		-- { "mode", separator = { left = "" }, right_padding = 0 },
 	},
 	lualine_b = {
 		{
@@ -56,8 +61,10 @@ local sections = {
 		},
 	},
 	lualine_x = { "fileformat" },
-	lualine_y = { "filetype", "encoding" },
+	lualine_y = { "filetype", { "filesize" }, "diagnostics" },
 	lualine_z = {
+		{ waifu },
+		-- { "location", separator = { right = "" }, left_padding = 2 },
 		{ "location", separator = { right = "" }, left_padding = 2 },
 	},
 }
@@ -65,11 +72,13 @@ local sections = {
 require("lualine").setup({
 	options = {
 		theme = bubbles_theme,
-		component_separators = { left = ">", right = "<" },
+		component_separators = { left = "", right = "" },
+		-- section_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
 			"NvimTree",
 			"Trouble",
+			"Neotree",
 		},
 	},
 	sections = sections,
