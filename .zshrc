@@ -108,10 +108,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # My Alias
-
 alias ls="colorls"
 alias v="nvim"
 alias ra="ranger"
+alias wifi="nmcli dev wifi list"
+alias wific="nmcli dev wifi connect"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
