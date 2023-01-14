@@ -111,8 +111,14 @@ source $ZSH/oh-my-zsh.sh
 alias ls="colorls"
 alias v="nvim"
 alias ra="ranger"
+alias h="htop"
+alias nf="neofetch"
 alias wifi="nmcli dev wifi list"
 alias wific="nmcli dev wifi connect"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+source /home/angga/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export EDITOR=nvim

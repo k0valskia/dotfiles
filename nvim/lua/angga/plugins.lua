@@ -51,9 +51,15 @@ return packer.startup(function(use)
 	use("NvChad/nvim-colorizer.lua")
 	use("lewis6991/gitsigns.nvim")
 	use({ "glepnir/dashboard-nvim" })
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use({ "bluz71/vim-moonfly-colors", branch = "cterm-compat" })
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+        require('lspsaga').setup({})
+    end,
+})
 	use({
 		"rcarriga/nvim-notify",
 		config = function()
