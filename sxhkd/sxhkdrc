@@ -10,6 +10,10 @@ super + e
 super + w
   firefox
 
+# web browser
+super + x
+  maim "/home/$USER/Pictures/screenshot/$(date).jpg"
+
 # program launcher
 super + d
 	rofi -modi drun, run -show drun
