@@ -10,7 +10,7 @@ super + e
 super + w
   firefox
 
-# web browser
+# screenshpt
 super + x
   maim "/home/$USER/Pictures/screenshot/$(date).jpg"
 
