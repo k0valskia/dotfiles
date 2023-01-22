@@ -1,2 +1,2 @@
 ![myDesktop](/screenshot/bspwm.jpg?raw=true "bspwm")<br>
-![myDesktop](/screenshot/linux.jpg?raw=true "i3wm")<br>
+![myDesktop](/screenshot/bspwm2.jpg?raw=true "bspwm")<br>
