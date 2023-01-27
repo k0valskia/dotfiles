@@ -1,9 +1,11 @@
 * {
     /* General */
-    background: #0f111b;
+    /*background: #0f111b;*/
+    background: #0a0a0a;
     foreground: #ecf0c1;
-    border: #364A82;
-    selected: #364A82;
+    border: #383838;
+    /*selected: #364A82;*/
+    selected: #1c1c1c;
 
     /* Inputbar */
     entry-background: #373B41;

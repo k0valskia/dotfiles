@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="colorls"
 alias v="nvim"
 alias ra="ranger"
-alias h="htop"
+alias h="btop"
 alias nf="neofetch"
 alias wifi="nmcli dev wifi list"
 alias wific="nmcli dev wifi connect"
