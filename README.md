@@ -1,8 +1,6 @@
 <div align="center">
 <h1>personal dotfiles</h1>
 
-## some information
-
 | Info       | =         |
 | ---------- | --------- |
 | wm         | bspwm     |
