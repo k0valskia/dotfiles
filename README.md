@@ -1,8 +1,6 @@
 <div align="center">
 <h1>personal dotfiles</h1>
 
-![myDesktop](/screenshot/linux.jpg?raw=true "bspwm")<br>
-
 ## some information
 
 | Info       | =         |
